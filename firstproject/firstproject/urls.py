@@ -22,6 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', first.welcome, name="welcome"),
     path('hello/', first.hello, name="hello"),
-    path('wc/', wc.home, name="wc"),
-    path('wc/result/', wc.result, name="result"),
+    path('wc/',wc.home, name="wc"),
+    path('wc/result/',wc.result, name="result"),
 ]

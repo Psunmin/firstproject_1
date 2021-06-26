@@ -15,5 +15,4 @@ def result(request):
             wordDict [word] += 1
         else:
             wordDict[word] = 1
-
-    return render(request, "result.html", {"fulltext":sentence, "count":len(wordList), "wordDict":wordDict.items})
+    return render(request, "result.html", {'fulltext':sentence, 'count': len(wordList), "wordDict":wordDict.items})
